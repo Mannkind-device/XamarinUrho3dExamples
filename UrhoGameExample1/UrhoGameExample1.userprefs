@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{767A01A0-17CF-4562-BE1F-C57BE89DC2D8}|Default">
+  <MonoDevelop.Ide.ItemProperties.UrhoGameExample1.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.b1ad50cc484e8d67ee7e25bcbaf3fcb1e190f98f" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="UrhoGameExample1/UrhoGameExample1.iOS/Resources/Data/Materials/BoxMaterial.xml">
+    <Files>
+      <File FileName="UrhoGameExample1/UrhoGameExample1.Droid/UrhoSharpReadme.txt" Line="17" Column="19" />
+      <File FileName="UrhoGameExample1/UrhoGameExample1/MyGame.cs" Line="59" Column="1" />
+      <File FileName="UrhoGameExample1/UrhoGameExample1.iOS/Resources/Data/Models/Box.mdl" Line="1" Column="1" />
+      <File FileName="UrhoGameExample1/UrhoGameExample1.iOS/Resources/Data/Materials/BoxMaterial.xml" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.UrhoGameExample1.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -30,7 +30,7 @@ namespace UrhoGameExample1
             CreateScene();
 
             // Subscribe to Esc key:
-            Input.SubscribeToKeyDown(args => { if (args.Key == Key.Esc) Exit(); });
+            Input.KeyDown += (args => { if (args.Key == Key.Esc) Exit(); });
         }
 
         async void CreateScene()
@@ -56,7 +56,7 @@ namespace UrhoGameExample1
 
             StaticModel boxModel = boxNode.CreateComponent<StaticModel>();
             boxModel.Model = ResourceCache.GetModel("Models/Box.mdl");
-            boxModel.SetMaterial(ResourceCache.GetMaterial("Materials/BoxMaterial.xml"));
+        //    boxModel.SetMaterial(ResourceCache.GetMaterial("Materials/BoxMaterial.xml"));
 
             // Light
             Node lightNode = scene.CreateChild(name: "light");
