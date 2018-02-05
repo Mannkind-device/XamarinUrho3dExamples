@@ -1,12 +1,8 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using System.Diagnostics;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Urho;
-using Urho.Gui;
 using Urho.Actions;
-using Urho.Shapes;
+using Urho.Gui;
 
 namespace UrhoGameExample1
 {
@@ -29,13 +25,14 @@ namespace UrhoGameExample1
         {
             CreateScene();
 
+            //CreateNewScene();
             // Subscribe to Esc key:
             Input.KeyDown += (args => { if (args.Key == Key.Esc) Exit(); });
         }
 
-        async void CreateScene()
+        private async void CreateScene()
         {
-            // UI text 
+            // UI text
             var helloText = new Text(Context);
             helloText.Value = "Hello World from UrhoSharp";
             helloText.HorizontalAlignment = HorizontalAlignment.Center;
@@ -48,7 +45,7 @@ namespace UrhoGameExample1
             var scene = new Scene(Context);
             scene.CreateComponent<Octree>();
 
-            // Box	
+            // Box
             Node boxNode = scene.CreateChild(name: "Box node");
             boxNode.Position = new Vector3(x: 0, y: 0, z: 5);
             boxNode.SetScale(0f);
@@ -56,13 +53,14 @@ namespace UrhoGameExample1
 
             StaticModel boxModel = boxNode.CreateComponent<StaticModel>();
             boxModel.Model = ResourceCache.GetModel("Models/Box.mdl");
-        //    boxModel.SetMaterial(ResourceCache.GetMaterial("Materials/BoxMaterial.xml"));
+            //    boxModel.SetMaterial(ResourceCache.GetMaterial("Materials/BoxMaterial.xml"));
 
             // Light
             Node lightNode = scene.CreateChild(name: "light");
             var light = lightNode.CreateComponent<Light>();
             light.Range = 10;
             light.Brightness = 1.5f;
+            light.Color = Color.FromHex("00FF00");
 
             // Camera
             Node cameraNode = scene.CreateChild(name: "camera");
@@ -76,5 +74,7 @@ namespace UrhoGameExample1
             await boxNode.RunActionsAsync(new RepeatForever(
                 new RotateBy(duration: 1, deltaAngleX: 90, deltaAngleY: 0, deltaAngleZ: 0)));
         }
+
+       
     }
 }
