@@ -21,7 +21,7 @@ namespace SamplyGameExercise.Samply
             FrontTile = CreateTile(0);
             RearTile = CreateTile(1);
 
-            RotateBackground();
+            AnimateBackground();
         }
 
         private Node CreateTile(int index)
@@ -62,7 +62,7 @@ namespace SamplyGameExercise.Samply
             return tile;
         }
 
-        async void RotateBackground()
+        async void AnimateBackground()
         {
             while (true)
             {
