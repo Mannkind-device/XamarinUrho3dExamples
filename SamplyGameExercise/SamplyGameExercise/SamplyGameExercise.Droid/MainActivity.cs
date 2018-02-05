@@ -25,7 +25,7 @@ namespace SamplyGameExercise.Droid
             var surface = UrhoSurface.CreateSurface(this);
             layout.AddView(surface);
             SetContentView(layout);
-            myGame = await surface.Show<SamplyGame>(new ApplicationOptions("Data"));
+          //  myGame = await surface.Show<SamplyGame>(new ApplicationOptions("Data"));
             //to stop the game use await surface.Stop().
         }
 
