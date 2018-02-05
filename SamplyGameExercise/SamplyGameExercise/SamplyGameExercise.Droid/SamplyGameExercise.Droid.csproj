@@ -16,7 +16,7 @@
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -80,6 +80,7 @@
   <ItemGroup>
     <ProjectReference Include="..\SamplyGameExercise\SamplyGameExercise.csproj">
       <Name>SamplyGameExercise</Name>
+      <Project>{47BBBF31-9620-4C61-81BA-EAA693F72A78}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

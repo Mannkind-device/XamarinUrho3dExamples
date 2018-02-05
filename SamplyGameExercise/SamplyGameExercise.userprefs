@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{767A01A0-17CF-4562-BE1F-C57BE89DC2D8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SamplyGameExercise/SamplyGameExercise.Droid/MainActivity.cs">
+    <Files>
+      <File FileName="SamplyGameExercise/SamplyGameExercise.iOS/AppDelegate.cs" Line="22" Column="10" />
+      <File FileName="SamplyGameExercise/SamplyGameExercise.Desktop/Program.cs" Line="1" Column="1" />
+      <File FileName="SamplyGameExercise/SamplyGameExercise.iOS/Main.cs" Line="1" Column="1" />
+      <File FileName="SamplyGameExercise/SamplyGameExercise.Droid/MainActivity.cs" Line="19" Column="19" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.SamplyGameExercise.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

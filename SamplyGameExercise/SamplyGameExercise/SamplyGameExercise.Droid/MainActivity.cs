@@ -6,6 +6,7 @@ using Android.OS;
 using Org.Libsdl.App;
 using Urho;
 using Urho.Droid;
+using SamplyGameExercise.Samply;
 
 namespace SamplyGameExercise.Droid
 {
@@ -15,16 +16,16 @@ namespace SamplyGameExercise.Droid
         ScreenOrientation = ScreenOrientation.Landscape)]
     public class MainActivity : Activity
     {
-        MyGame myGame;
+        SamplyGame myGame;
 
         protected override async void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
             var layout = new AbsoluteLayout(this);
-            var surface = UrhoSurface.CreateSurface<MyGame>(this);
+            var surface = UrhoSurface.CreateSurface(this);
             layout.AddView(surface);
             SetContentView(layout);
-            myGame = await surface.Show<MyGame>(new ApplicationOptions("Data"));
+            myGame = await surface.Show<SamplyGame>(new ApplicationOptions("Data"));
             //to stop the game use await surface.Stop().
         }
 

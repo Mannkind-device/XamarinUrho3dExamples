@@ -139,6 +139,7 @@
   <ItemGroup>
     <ProjectReference Include="..\SamplyGameExercise\SamplyGameExercise.csproj">
       <Name>SamplyGameExercise</Name>
+      <Project>{47BBBF31-9620-4C61-81BA-EAA693F72A78}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

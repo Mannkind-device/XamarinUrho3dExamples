@@ -3,6 +3,7 @@ using UIKit;
 using Urho;
 using Urho.iOS;
 using System.Threading.Tasks;
+using SamplyGameExercise.Samply;
 
 namespace SamplyGameExercise.iOS
 {
@@ -20,7 +21,8 @@ namespace SamplyGameExercise.iOS
         async void LaunchGame()
         {
             await Task.Yield();
-            new MyGame(new ApplicationOptions("Data")).Run();
+            //new MyGame(new ApplicationOptions("Data")).Run();
+            new SamplyGame().Run();
         }
     }
 }
